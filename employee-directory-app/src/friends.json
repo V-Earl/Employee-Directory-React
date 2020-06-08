@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Catharina Mouw",
+    "position": "Fry Cook",
+    "email": "catharina.mouw@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Max Willis",
+    "position": "Restaurant Owner",
+    "email": "max.willis@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Derek Den Boef",
+    "position": "Cashier",
+    "email": "derek.denboef@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Wallace Medina",
+    "position": "Boy Genius",
+    "email": "wallace.medina@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Samantha Martin",
+    "position": "A Cowardly Dog",
+    "email": "samantha.martin@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Peetu Kumpula",
+    "position": "Student",
+    "email": "peetu.kumpula@example.com"
+  },
+  {
+    "id": 7,
+    "name": "Faustine Mathieu",
+    "position": "Looney Toon",
+    "email": "faustine.mathieu@example.com"
+  },
+  {
+    "id": 8,
+    "name": "Alexei List",
+    "position": "Ladies Man",
+    "email": "alexei.list@example.com"
+  },
+  {
+    "id": 9,
+    "name": "Amy Williamson",
+    "position": "Adventurer",
+    "email": "amy.williamson@example.com"
+  },
+  {
+    "id": 10,
+    "name": "Eva Morin",
+    "position": "Cashier",
+    "email": "eva.morin@example.com"
+  },
+  {
+    "id": 11,
+    "name": "Lloyd Marshall",
+    "position": "Superhero",
+    "email": "lloyd.marshall@example.com"
+  }
+]

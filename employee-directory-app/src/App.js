@@ -1,38 +1,34 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import Employee from "./components/Employee";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import employees from "./employees.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
-    friends: friends,
+    employees: employees,
   };
 
-  removeFriend = (id) => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter((friend) => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+  removeEmployee = (id) => {
+    const employees = this.state.employees.filter(
+      (employee) => employee.id !== id
+    );
+    this.setState({ employees });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>Employee Directory</Title>
-        {this.state.friends.map((friend) => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={`https://picsum.photos/id/${Math.floor(
-              Math.random() * 500
-            )}/200/300`}
-            position={friend.position}
-            email={friend.email}
+        <Title className="title">Employee Directory</Title>
+        {this.state.employees.map((employee) => (
+          <Employee
+            removeEmployee={this.removeEmployee}
+            id={employee.id}
+            key={employee.id}
+            name={employee.name}
+            image={employee.image}
+            position={employee.position}
+            email={employee.email}
           />
         ))}
       </Wrapper>

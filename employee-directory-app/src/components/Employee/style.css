@@ -34,14 +34,10 @@
 }
 
 .card > .remove {
-  color: #ff1744;
-  font-size: 48px;
+  /* color: #ff1744; */
+  font-size: 15px;
   position: absolute;
-  top: -20px;
+  top: 5px;
   right: 5px;
   cursor: pointer;
-}
-
-.card > .remove:hover {
-  color: #d50000;
 }

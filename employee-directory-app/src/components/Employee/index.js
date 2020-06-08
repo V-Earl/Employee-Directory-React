@@ -1,9 +1,15 @@
 import React from "react";
 import "./style.css";
+import { Button } from "@material-ui/core";
 
-function FriendCard(props) {
+function Employee(props) {
   return (
     <div className="card">
+      <span onClick={() => props.removeEmployee(props.id)} className="remove">
+        <Button variant="outlined" color="secondary">
+          Remove
+        </Button>
+      </span>
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
@@ -20,11 +26,8 @@ function FriendCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
     </div>
   );
 }
 
-export default FriendCard;
+export default Employee;
